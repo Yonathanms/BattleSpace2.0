@@ -10,14 +10,14 @@ using namespace sf;
 
 #endif //PRUEBASPROYECTO_VENTANA_PRINCIPAL_H
 
-class ventana_Principal{
+class ventana_Principal{       ///clase ventana del menu
+
 public:
-    ventana_Principal(int dimension_x, int dimension_y);
-    void renderizar();
-    void ciclo();
+    ventana_Principal(int dimension_x, int dimension_y);      /// ahi tiene los parametros de las diemsiones que uno quiera
+    void renderizar();         /// este es el metodo renderizar
+    void ciclo();               /// metodo de los ciclos
 
 private:
-    RenderWindow * VentanaMenu;
-    int fps;
-
+    RenderWindow * VentanaMenu; ////representa la ventana principal, pero a pesar de eso es un atributo, no es un objeto como tal
+    int fps;    //// representa un id para la cantidad de frames por segundo, igualmente es un atributo y se le da valor en el .cpp
 };

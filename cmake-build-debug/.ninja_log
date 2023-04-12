@@ -1,0 +1,10 @@
+# ninja log v5
+0	352	1681173710208525461	CMakeFiles/PruebasProyecto.dir/Modelo/main.cpp.o	233d78555f82d40f
+0	385	1681173710240525389	CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_Principal.cpp.o	18bf05bafd6c7b96
+385	435	1681173710292525273	PruebasProyecto	c88d4e872a43700c
+1	328	1681174351439290225	CMakeFiles/PruebasProyecto.dir/Modelo/main.cpp.o	233d78555f82d40f
+1	332	1681174351443290218	CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_Principal.cpp.o	18bf05bafd6c7b96
+332	375	1681174351487290139	PruebasProyecto	c88d4e872a43700c
+0	416	1681264845457871267	CMakeFiles/PruebasProyecto.dir/Modelo/main.cpp.o	233d78555f82d40f
+0	419	1681264845457871267	CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_Principal.cpp.o	18bf05bafd6c7b96
+419	507	1681264845545868019	PruebasProyecto	c88d4e872a43700c
