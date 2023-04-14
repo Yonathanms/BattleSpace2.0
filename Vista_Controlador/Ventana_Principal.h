@@ -4,8 +4,6 @@
 #pragma once
 
 #include "SFML/Graphics.hpp"
-#include "iostream"
-#include "fstream"
 
 using namespace sf;
 
@@ -23,12 +21,12 @@ public:
     void eventos();
 
 private:
-    int num_dificultad; /// representa la dificultad que va a escoger el jugador seg[un el boton que aprete
     RectangleShape * btnFacil;
-    RectangleShape  btnMedio;
-    RectangleShape  btnDificil;
-    RenderWindow  VentanaMenu; ////representa la ventana principal, pero a pesar de eso es un atributo, no es un objeto como tal
-    int fps;    //// representa un id para la cantidad de frames por segundo, igualmente es un atributo y se le da valor en el .cpp
+    RectangleShape * btnMedio;
+    RectangleShape  *btnDificil;
+    Event *evento;
+    RenderWindow  *VentanaMenu; ////representa la ventana principal, pero a pesar de eso es un atributo, no es un objeto como tal
+
 };
 
 #endif PRUEBASPROYECTO_VENTANA_PRINCIPAL_H
