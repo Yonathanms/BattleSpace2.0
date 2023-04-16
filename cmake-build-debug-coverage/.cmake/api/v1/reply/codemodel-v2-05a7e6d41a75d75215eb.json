@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "PruebasProyecto::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-PruebasProyecto-Debug-c0eccd95d6787fbfbe73.json",
+					"jsonFile" : "target-PruebasProyecto-Debug-c54409e62caa20500e55.json",
 					"name" : "PruebasProyecto",
 					"projectIndex" : 0
 				}
@@ -49,7 +49,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/yonathanms/Escritorio/PrueabasGitProyec/BattleSpace2.0/cmake-build-debug",
+		"build" : "/home/yonathanms/Escritorio/PrueabasGitProyec/BattleSpace2.0/cmake-build-debug-coverage",
 		"source" : "/home/yonathanms/Escritorio/PrueabasGitProyec/BattleSpace2.0"
 	},
 	"version" : 

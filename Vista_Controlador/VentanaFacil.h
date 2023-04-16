@@ -4,6 +4,7 @@
 #pragma once
 
 #include "SFML/Graphics.hpp"
+#include "Ship.h"
 
 using namespace sf;
 
@@ -11,8 +12,7 @@ using namespace sf;
 #define PRUEBASPROYECTO_VENTANAFACIL_H
 
 
-class Ventana_Facil {
-
+class Ventana_Facil: public Ship{
 public:
     //metodos
     Ventana_Facil();
@@ -25,7 +25,7 @@ public:
 private:
     //atributos
     RenderWindow *VentanaFacil;
-    Event *event;
+    Event *evento;
 
 };
 

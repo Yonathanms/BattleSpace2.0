@@ -8,6 +8,10 @@
 
 class Enemigos {
 
+public:
+
+private:
+
 };
 
 

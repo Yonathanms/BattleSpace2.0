@@ -36,7 +36,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 10,
+				"line" : 11,
 				"parent" : 0
 			},
 			{
@@ -79,7 +79,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "--coverage -g -fdiagnostics-color=always"
+					"fragment" : "-g -fdiagnostics-color=always"
 				}
 			],
 			"language" : "CXX",
@@ -108,7 +108,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "--coverage -g",
+				"fragment" : "-g",
 				"role" : "flags"
 			},
 			{
@@ -231,7 +231,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Modelo/Bullet.h",
+			"path" : "Vista_Controlador/Bullet.h",
 			"sourceGroupIndex" : 1
 		}
 	],

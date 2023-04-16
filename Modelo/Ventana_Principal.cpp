@@ -10,6 +10,7 @@ ventana_Principal::ventana_Principal() {   /// este es el constructor de la clas
     VentanaMenu ->setFramerateLimit(60);  /// limita la ventana a 60 fps
     evento = new Event;
     botones();
+
     ciclo();   /// se le da ciclos a la ventana con el metodo "ciclo"
 
 
@@ -50,7 +51,6 @@ void ventana_Principal::eventos() {
                     VentanaMenu->close();
                     Ventana_Facil();
 
-                    //
                 }
 
                 if (posicionmouse.x >= btnMedio->getPosition().x &&
