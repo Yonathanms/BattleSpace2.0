@@ -1,6 +1,7 @@
 //
 // Created by yonathanms on 15/04/23.
 //
+
 #include "../Vista_Controlador/VentanaFacil.h"
 #include "iostream"
 
@@ -20,6 +21,14 @@ void Ventana_Facil::eventos() {
                 VentanaFacil->close();
                 std::cout << "Ventana facil cerrada de forma exitosa" << std::endl;
                 exit(1);
+
+            case Event::KeyPressed:
+                if (Keyboard::isKeyPressed(Keyboard::W)) {
+                    MoveS(1);
+                }
+                if (Keyboard::isKeyPressed(Keyboard::S)){
+                    MoveS(0);
+                }
         }
     }
 }
@@ -29,7 +38,6 @@ void Ventana_Facil::renderizar() {
     VentanaFacil->clear();
     VentanaFacil->draw(GetSprShip());  ///obtiene el sprite de la nave  del "ship.h" por medio de herencia
     VentanaFacil->display();
-    std::cout<<"Hola kvros soy un bucle de pruebas"<<std::endl;
 }
 
 void Ventana_Facil::ciclo(){
