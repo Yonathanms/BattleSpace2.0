@@ -21,8 +21,8 @@ public:
     void eventos();
 
 private:
-    RectangleShape * btnFacil;
-    RectangleShape * btnMedio;
+    RectangleShape *btnFacil;
+    RectangleShape *btnMedio;
     RectangleShape  *btnDificil;
     Event *evento;
     RenderWindow  *VentanaMenu; ////representa la ventana principal, pero a pesar de eso es un atributo, no es un objeto como tal
