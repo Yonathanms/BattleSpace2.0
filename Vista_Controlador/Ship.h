@@ -18,12 +18,13 @@ public:
     Ship();
     Sprite GetSprShip();
     int HealthS();
-
+    int GetPositionShip_Y();
     void MoveS(int num_direction);    ///al ingresar un "1" o "0" se va a mover hacia arriba y hacia abajo
 
 private:
     Sprite *spr_ships;
     Texture *txtr_ships;
+
 };
 
 

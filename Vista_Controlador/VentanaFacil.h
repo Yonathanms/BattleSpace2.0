@@ -15,7 +15,7 @@ using namespace sf;
 
 class Ventana_Facil: public Ship, public Bullet{
 public:
-    //metodos
+    ///metodos
     Ventana_Facil();
     void ciclo();
     void renderizar();
@@ -24,7 +24,7 @@ public:
 
 
 private:
-    //atributos
+    ///atributos
     RenderWindow *VentanaFacil;
     Event *evento;
 

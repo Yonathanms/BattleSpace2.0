@@ -4,6 +4,7 @@
 
 #pragma once
 
+#include "../Vista_Controlador/Ship.h"
 #include "SFML/Graphics.hpp"
 
 using namespace sf;
@@ -12,20 +13,21 @@ using namespace sf;
 #define PRUEBASPROYECTO_BULLET_H
 
 
-class Bullet {
+class Bullet{
 public:
     Bullet();
-    void SetNumBullet();
+    int SetNumBullet(int c_balas);
     Sprite GetSprBullet();
-    void MoveBullet_Y(int num_direction);
-    void MoveBullet_X();
+    void MoveBullet_X(int Posicion_Spawn);
+    void BulletCollector();
     void Damage_B();
 
 private:
     Texture *txtr_bullet;
     Sprite *spr_bullet;
     int num_bullet;
-
+    int total_num_bullet;
+    int *id_bullet;
 };
 
 

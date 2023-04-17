@@ -6,32 +6,37 @@
 #include "iostream"
 
 Ship::Ship(){
-    //le damos valor a los punteros
+    ///le damos valor a los punteros
     spr_ships = new Sprite;
     txtr_ships = new Texture;
 
     //cargamos la textura
     txtr_ships->loadFromFile("../Recursos/navee.png");
     spr_ships->setTexture(*txtr_ships);
-    spr_ships->setPosition(80, 325);
+    spr_ships->setPosition(80, 395);
 }
-//obtiene la textura y sprite de la nave principal:
+///Obtener la posicion en y de la nave.
+int Ship::GetPositionShip_Y() {
+    if(spr_ships->getPosition().x==80){
+        return spr_ships->getPosition().y+20;
+    }
+}
+
+///obtiene la textura y sprite de la nave principal:
 Sprite Ship::GetSprShip() {
     return *spr_ships;
 }
 
-//metodo del movimiento de la nave, ingresa como variable un entero y una ventana;
+///metodo del movimiento de la nave, ingresa como variable un entero
 void Ship::MoveS(int num_direction) {
-    if (num_direction == 1) {
+    if (num_direction == 1) {           ///se mueve hacia arriba
         if (spr_ships->getPosition().y - 10 >= 0) {
             spr_ships->setPosition(spr_ships->getPosition().x, spr_ships->getPosition().y - 10);
-            std::cout << "me movi para arriba" << std::endl;
         }
     }
-    if (num_direction == 0) {
+    if (num_direction == 0) {                      ///se mueve hacia abajo
         if (spr_ships->getPosition().y +10 <= 800){
             spr_ships->setPosition(spr_ships->getPosition().x, spr_ships->getPosition().y + 10);
-            std::cout << "me movi para abajo" << std::endl;
         }
     }
 }

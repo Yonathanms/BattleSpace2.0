@@ -10,46 +10,48 @@ Bullet::Bullet() {
     spr_bullet = new Sprite;
 
     txtr_bullet->loadFromFile("../Recursos/Bullet.png");
+
     spr_bullet->setTexture(*txtr_bullet);
     spr_bullet->setScale(1.f/14,1.f/10);
-    spr_bullet->setPosition(170,345);
-    num_bullet = 50;
-
+    spr_bullet->setPosition(170,2000);
 }
-
+///obtiene el sprite de la bala
 Sprite Bullet::GetSprBullet() {
     return *spr_bullet;
 }
-
-void Bullet::MoveBullet_Y(int num_direction) {
-    if (num_direction == 1) {
-        if (spr_bullet->getPosition().y - 10 >= 20) {
-            spr_bullet->setPosition(spr_bullet->getPosition().x, spr_bullet->getPosition().y - 10);
-            std::cout << "me movi para arriba" << std::endl;
-        }
-    }
-    if (num_direction == 0) {
-        if (spr_bullet->getPosition().y +10 <= 820){
-            spr_bullet->setPosition(spr_bullet->getPosition().x, spr_bullet->getPosition().y + 10);
-            std::cout << "me movi para abajo" << std::endl;
-        }
-    }
+///obtiene la cantidad de balas que hayamos otorgado en las clases ventanas
+int Bullet::SetNumBullet(int c_balas) {
+    std::cout<<"cantidad de balas totales por 'cartucho' = "<<c_balas<<std::endl;
+    num_bullet=c_balas;
+    total_num_bullet=c_balas;
+    return c_balas;
 }
 
-void Bullet::MoveBullet_X() {
-    if (num_bullet>=0){
+///Es el metodo bullet collector, este metodo debe reutilizar la memoria y disminuir el daño de las balas
+void Bullet::BulletCollector() {
+    std::cout<<"numero de identificador de la bala= "<<num_bullet<<std::endl;         ///tengo que mostrar las balas primero para poder hacer esto xd************************
+}
+
+///es un metodo que permite spawnear la bala en la posicion y enemiga y luego se mueve en x
+void Bullet::MoveBullet_X(int Posicion_Spawn) {
+
+    if (num_bullet>0){
         num_bullet--;
-        std::cout<<num_bullet<<std::endl;
     }
     if (num_bullet<=0){
+        num_bullet = total_num_bullet;
         std::cout<<"municion descargada"<<std::endl;
-        num_bullet=50;
+    }
+    if (spr_bullet->getPosition().x==170){
+        spr_bullet->setPosition(spr_bullet->getPosition().x+5,Posicion_Spawn);
 
     }
+    if (spr_bullet->getPosition().x!=170){
+        spr_bullet->setPosition(spr_bullet->getPosition().x+5,spr_bullet->getPosition().y);
+    }
+    std::cout<<"balas restantes= "<<num_bullet<<::std::endl;
 }
 
-void Bullet::SetNumBullet() {
-}
 
 
 
