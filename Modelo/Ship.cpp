@@ -13,7 +13,7 @@ Ship::Ship(){
     //cargamos la textura
     txtr_ships->loadFromFile("../Recursos/navee.png");
     spr_ships->setTexture(*txtr_ships);
-    spr_ships->setPosition(100, 325);
+    spr_ships->setPosition(80, 325);
 }
 //obtiene la textura y sprite de la nave principal:
 Sprite Ship::GetSprShip() {

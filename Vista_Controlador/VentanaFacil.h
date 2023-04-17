@@ -5,6 +5,7 @@
 
 #include "SFML/Graphics.hpp"
 #include "Ship.h"
+#include "../Vista_Controlador/Bullet.h"
 
 using namespace sf;
 
@@ -12,7 +13,7 @@ using namespace sf;
 #define PRUEBASPROYECTO_VENTANAFACIL_H
 
 
-class Ventana_Facil: public Ship{
+class Ventana_Facil: public Ship, public Bullet{
 public:
     //metodos
     Ventana_Facil();

@@ -18,6 +18,7 @@ public:
     Ship();
     Sprite GetSprShip();
     int HealthS();
+
     void MoveS(int num_direction);    ///al ingresar un "1" o "0" se va a mover hacia arriba y hacia abajo
 
 private:
