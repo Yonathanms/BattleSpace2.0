@@ -1,7 +1,7 @@
-CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_Principal.cpp.o: \
- /home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/Ventana_Principal.cpp \
+CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_dificil.cpp.o: \
+ /home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/Ventana_dificil.cpp \
  /usr/include/stdc-predef.h \
- /home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/../Vista_Controlador/VentanaFacil.h \
+ /home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/../Vista_Controlador/Ventana_dificil.h \
  /home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/../Vista_Controlador/SerialStream.h \
  /usr/include/libserial/SerialPortConstants.h /usr/include/c++/11/limits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -271,10 +271,6 @@ CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_Principal.cpp.o: \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
  /home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/../Vista_Controlador/Ship.h \
- /home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/../Vista_Controlador/../Vista_Controlador/Bullet.h \
- /home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/../Vista_Controlador/../Vista_Controlador/Enemigos.h \
- /usr/include/c++/11/stdlib.h /usr/include/c++/11/iostream \
- /home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/../Vista_Controlador/Ventana_media.h \
+ /home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/../Vista_Controlador/Bullet.h \
  /home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/../Vista_Controlador/Enemigos.h \
- /home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/../Vista_Controlador/Ventana_dificil.h \
- /home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/../Vista_Controlador/Ventana_Principal.h
+ /usr/include/c++/11/stdlib.h /usr/include/c++/11/iostream

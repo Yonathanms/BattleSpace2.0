@@ -22,6 +22,8 @@ Ventana_Facil::Ventana_Facil(Vector2f resolucion) {
     VentanaFacil->setFramerateLimit(70);
     evento = new Event;
 
+
+
     Reloj_Ventana = new Clock;
     TiempoTranscurrido = new Time;
     Reloj_Ventana2 = new Clock;

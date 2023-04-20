@@ -3,8 +3,11 @@
 //
 
 #include "../Vista_Controlador/VentanaFacil.h"
+#include "../Vista_Controlador/Ventana_media.h"
+#include "../Vista_Controlador/Ventana_dificil.h"
 #include "../Vista_Controlador/Ventana_Principal.h" /// Importa el header de la clase ventana
 #include "iostream"
+
 ventana_Principal::ventana_Principal() {   /// este es el constructor de la clase y se usa en el main.cpp
     VentanaMenu = new RenderWindow(VideoMode(800,600),"Ventana Principal"); /// crea las dimensiones de la ventana
     VentanaMenu ->setFramerateLimit(60);  /// limita la ventana a 60 fps
@@ -59,6 +62,7 @@ void ventana_Principal::eventos() {
                     posicionmouse.y <= btnMedio->getPosition().y + btnMedio->getSize().y){
                     std::cout<<"hola ventana nueva de modo Medio xd x2"<< std::endl;
                     VentanaMenu->close();
+                    Ventana_media({1350,850});
                 }
 
                 if (posicionmouse.x >= btnDificil->getPosition().x &&
@@ -67,6 +71,8 @@ void ventana_Principal::eventos() {
                     posicionmouse.y <= btnDificil->getPosition().y + btnDificil->getSize().y){
                     std::cout<<"hola ventana nueva de modo Hardcore xd x3"<< std::endl;
                     VentanaMenu->close();
+                    Ventana_dificil({1350,850});
+
                 }
         }
     }

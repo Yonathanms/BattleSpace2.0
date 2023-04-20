@@ -99,6 +99,12 @@
 		<Unit filename="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/Ventana_Principal.cpp">
 			<Option target="PruebasProyecto"/>
 		</Unit>
+		<Unit filename="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/Ventana_dificil.cpp">
+			<Option target="PruebasProyecto"/>
+		</Unit>
+		<Unit filename="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/Ventana_media.cpp">
+			<Option target="PruebasProyecto"/>
+		</Unit>
 		<Unit filename="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/main.cpp">
 			<Option target="PruebasProyecto"/>
 		</Unit>
@@ -115,6 +121,12 @@
 			<Option target="PruebasProyecto"/>
 		</Unit>
 		<Unit filename="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/Vista_Controlador/Ventana_Principal.h">
+			<Option target="PruebasProyecto"/>
+		</Unit>
+		<Unit filename="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/Vista_Controlador/Ventana_dificil.h">
+			<Option target="PruebasProyecto"/>
+		</Unit>
+		<Unit filename="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/Vista_Controlador/Ventana_media.h">
 			<Option target="PruebasProyecto"/>
 		</Unit>
 		<Unit filename="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/CMakeLists.txt">

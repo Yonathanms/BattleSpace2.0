@@ -3,10 +3,6 @@
 //
 #pragma once
 
-
-
-
-
 #ifndef PRUEBASPROYECTO_VENTANAFACIL_H
 
 #include "SerialStream.h"
@@ -36,8 +32,6 @@ public:
     void RenderBullets();
     int Reduccion_Bullets(int num_actual);
     int Reduccion_Enemys(int num_actual);
-    
-
     void RenderEnemys();
 
 

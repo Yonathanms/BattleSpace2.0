@@ -249,6 +249,54 @@ Modelo/Ventana_Principal.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PruebasProyecto.dir/build.make CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_Principal.cpp.s
 .PHONY : Modelo/Ventana_Principal.cpp.s
 
+Modelo/Ventana_dificil.o: Modelo/Ventana_dificil.cpp.o
+.PHONY : Modelo/Ventana_dificil.o
+
+# target to build an object file
+Modelo/Ventana_dificil.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PruebasProyecto.dir/build.make CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_dificil.cpp.o
+.PHONY : Modelo/Ventana_dificil.cpp.o
+
+Modelo/Ventana_dificil.i: Modelo/Ventana_dificil.cpp.i
+.PHONY : Modelo/Ventana_dificil.i
+
+# target to preprocess a source file
+Modelo/Ventana_dificil.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PruebasProyecto.dir/build.make CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_dificil.cpp.i
+.PHONY : Modelo/Ventana_dificil.cpp.i
+
+Modelo/Ventana_dificil.s: Modelo/Ventana_dificil.cpp.s
+.PHONY : Modelo/Ventana_dificil.s
+
+# target to generate assembly for a file
+Modelo/Ventana_dificil.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PruebasProyecto.dir/build.make CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_dificil.cpp.s
+.PHONY : Modelo/Ventana_dificil.cpp.s
+
+Modelo/Ventana_media.o: Modelo/Ventana_media.cpp.o
+.PHONY : Modelo/Ventana_media.o
+
+# target to build an object file
+Modelo/Ventana_media.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PruebasProyecto.dir/build.make CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_media.cpp.o
+.PHONY : Modelo/Ventana_media.cpp.o
+
+Modelo/Ventana_media.i: Modelo/Ventana_media.cpp.i
+.PHONY : Modelo/Ventana_media.i
+
+# target to preprocess a source file
+Modelo/Ventana_media.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PruebasProyecto.dir/build.make CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_media.cpp.i
+.PHONY : Modelo/Ventana_media.cpp.i
+
+Modelo/Ventana_media.s: Modelo/Ventana_media.cpp.s
+.PHONY : Modelo/Ventana_media.s
+
+# target to generate assembly for a file
+Modelo/Ventana_media.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PruebasProyecto.dir/build.make CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_media.cpp.s
+.PHONY : Modelo/Ventana_media.cpp.s
+
 Modelo/main.o: Modelo/main.cpp.o
 .PHONY : Modelo/main.o
 
@@ -297,6 +345,12 @@ help:
 	@echo "... Modelo/Ventana_Principal.o"
 	@echo "... Modelo/Ventana_Principal.i"
 	@echo "... Modelo/Ventana_Principal.s"
+	@echo "... Modelo/Ventana_dificil.o"
+	@echo "... Modelo/Ventana_dificil.i"
+	@echo "... Modelo/Ventana_dificil.s"
+	@echo "... Modelo/Ventana_media.o"
+	@echo "... Modelo/Ventana_media.i"
+	@echo "... Modelo/Ventana_media.s"
 	@echo "... Modelo/main.o"
 	@echo "... Modelo/main.i"
 	@echo "... Modelo/main.s"

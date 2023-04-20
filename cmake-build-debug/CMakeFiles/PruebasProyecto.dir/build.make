@@ -153,6 +153,34 @@ CMakeFiles/PruebasProyecto.dir/Modelo/Bullet.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PruebasProyecto.dir/Modelo/Bullet.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/Bullet.cpp -o CMakeFiles/PruebasProyecto.dir/Modelo/Bullet.cpp.s
 
+CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_media.cpp.o: CMakeFiles/PruebasProyecto.dir/flags.make
+CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_media.cpp.o: /home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/Ventana_media.cpp
+CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_media.cpp.o: CMakeFiles/PruebasProyecto.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_media.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_media.cpp.o -MF CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_media.cpp.o.d -o CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_media.cpp.o -c /home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/Ventana_media.cpp
+
+CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_media.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_media.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/Ventana_media.cpp > CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_media.cpp.i
+
+CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_media.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_media.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/Ventana_media.cpp -o CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_media.cpp.s
+
+CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_dificil.cpp.o: CMakeFiles/PruebasProyecto.dir/flags.make
+CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_dificil.cpp.o: /home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/Ventana_dificil.cpp
+CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_dificil.cpp.o: CMakeFiles/PruebasProyecto.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_dificil.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_dificil.cpp.o -MF CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_dificil.cpp.o.d -o CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_dificil.cpp.o -c /home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/Ventana_dificil.cpp
+
+CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_dificil.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_dificil.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/Ventana_dificil.cpp > CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_dificil.cpp.i
+
+CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_dificil.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_dificil.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/Ventana_dificil.cpp -o CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_dificil.cpp.s
+
 # Object files for target PruebasProyecto
 PruebasProyecto_OBJECTS = \
 "CMakeFiles/PruebasProyecto.dir/Modelo/main.cpp.o" \
@@ -160,7 +188,9 @@ PruebasProyecto_OBJECTS = \
 "CMakeFiles/PruebasProyecto.dir/Modelo/VentanaFacil.cpp.o" \
 "CMakeFiles/PruebasProyecto.dir/Modelo/Enemigos.cpp.o" \
 "CMakeFiles/PruebasProyecto.dir/Modelo/Ship.cpp.o" \
-"CMakeFiles/PruebasProyecto.dir/Modelo/Bullet.cpp.o"
+"CMakeFiles/PruebasProyecto.dir/Modelo/Bullet.cpp.o" \
+"CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_media.cpp.o" \
+"CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_dificil.cpp.o"
 
 # External object files for target PruebasProyecto
 PruebasProyecto_EXTERNAL_OBJECTS =
@@ -171,13 +201,15 @@ PruebasProyecto: CMakeFiles/PruebasProyecto.dir/Modelo/VentanaFacil.cpp.o
 PruebasProyecto: CMakeFiles/PruebasProyecto.dir/Modelo/Enemigos.cpp.o
 PruebasProyecto: CMakeFiles/PruebasProyecto.dir/Modelo/Ship.cpp.o
 PruebasProyecto: CMakeFiles/PruebasProyecto.dir/Modelo/Bullet.cpp.o
+PruebasProyecto: CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_media.cpp.o
+PruebasProyecto: CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_dificil.cpp.o
 PruebasProyecto: CMakeFiles/PruebasProyecto.dir/build.make
 PruebasProyecto: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1
 PruebasProyecto: /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1
 PruebasProyecto: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1
 PruebasProyecto: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
 PruebasProyecto: CMakeFiles/PruebasProyecto.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable PruebasProyecto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable PruebasProyecto"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PruebasProyecto.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

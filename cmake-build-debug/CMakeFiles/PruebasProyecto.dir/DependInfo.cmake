@@ -13,6 +13,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/Ship.cpp" "CMakeFiles/PruebasProyecto.dir/Modelo/Ship.cpp.o" "gcc" "CMakeFiles/PruebasProyecto.dir/Modelo/Ship.cpp.o.d"
   "/home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/VentanaFacil.cpp" "CMakeFiles/PruebasProyecto.dir/Modelo/VentanaFacil.cpp.o" "gcc" "CMakeFiles/PruebasProyecto.dir/Modelo/VentanaFacil.cpp.o.d"
   "/home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/Ventana_Principal.cpp" "CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_Principal.cpp.o" "gcc" "CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_Principal.cpp.o.d"
+  "/home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/Ventana_dificil.cpp" "CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_dificil.cpp.o" "gcc" "CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_dificil.cpp.o.d"
+  "/home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/Ventana_media.cpp" "CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_media.cpp.o" "gcc" "CMakeFiles/PruebasProyecto.dir/Modelo/Ventana_media.cpp.o.d"
   "/home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/main.cpp" "CMakeFiles/PruebasProyecto.dir/Modelo/main.cpp.o" "gcc" "CMakeFiles/PruebasProyecto.dir/Modelo/main.cpp.o.d"
   )
 
