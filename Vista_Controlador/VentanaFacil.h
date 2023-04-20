@@ -9,6 +9,10 @@
 
 #ifndef PRUEBASPROYECTO_VENTANAFACIL_H
 
+#include "SerialStream.h"
+#include "SerialStreamBuf.h"
+#include "thread"
+#include "SerialPortConstants.h"
 #include "SFML/Graphics.hpp"
 #include "Ship.h"
 #include "../Vista_Controlador/Bullet.h"
@@ -21,8 +25,11 @@ using namespace std;
 
 class Ventana_Facil: public Ship, public Bullet, public Enemigos{
 public:
+    LibSerial::SerialStream arduino;
+    std::string input;
     ///metodos
     Ventana_Facil(Vector2f resolucion);
+    void LeerArduino();
     void ciclo();
     void renderizar();
     void eventos();

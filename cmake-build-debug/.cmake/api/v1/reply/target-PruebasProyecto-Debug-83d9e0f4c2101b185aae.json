@@ -14,7 +14,8 @@
 			"target_link_libraries",
 			"set_target_properties",
 			"include",
-			"find_package"
+			"find_package",
+			"target_include_directories"
 		],
 		"files" : 
 		[
@@ -36,7 +37,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 11,
+				"line" : 12,
 				"parent" : 0
 			},
 			{
@@ -70,6 +71,12 @@
 				"file" : 1,
 				"line" : 126,
 				"parent" : 6
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 11,
+				"parent" : 0
 			}
 		]
 	},
@@ -80,6 +87,13 @@
 			[
 				{
 					"fragment" : "-g -fdiagnostics-color=always"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 9,
+					"path" : "/usr/include/libserial"
 				}
 			],
 			"language" : "CXX",
@@ -123,6 +137,11 @@
 			{
 				"backtrace" : 2,
 				"fragment" : "/usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-lserial",
 				"role" : "libraries"
 			},
 			{

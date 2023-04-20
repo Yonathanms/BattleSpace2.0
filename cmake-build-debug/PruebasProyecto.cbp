@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="PruebasProyecto"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PruebasProyecto">
+				<Option output="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug/PruebasProyecto" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/libserial"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 PruebasProyecto"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PruebasProyecto/fast">
+				<Option output="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug/PruebasProyecto" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/libserial"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 PruebasProyecto/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/Bullet.cpp">
+			<Option target="PruebasProyecto"/>
+		</Unit>
+		<Unit filename="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/Enemigos.cpp">
+			<Option target="PruebasProyecto"/>
+		</Unit>
+		<Unit filename="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/Ship.cpp">
+			<Option target="PruebasProyecto"/>
+		</Unit>
+		<Unit filename="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/VentanaFacil.cpp">
+			<Option target="PruebasProyecto"/>
+		</Unit>
+		<Unit filename="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/Ventana_Principal.cpp">
+			<Option target="PruebasProyecto"/>
+		</Unit>
+		<Unit filename="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/Modelo/main.cpp">
+			<Option target="PruebasProyecto"/>
+		</Unit>
+		<Unit filename="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/Vista_Controlador/Bullet.h">
+			<Option target="PruebasProyecto"/>
+		</Unit>
+		<Unit filename="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/Vista_Controlador/Enemigos.h">
+			<Option target="PruebasProyecto"/>
+		</Unit>
+		<Unit filename="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/Vista_Controlador/Ship.h">
+			<Option target="PruebasProyecto"/>
+		</Unit>
+		<Unit filename="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/Vista_Controlador/VentanaFacil.h">
+			<Option target="PruebasProyecto"/>
+		</Unit>
+		<Unit filename="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/Vista_Controlador/Ventana_Principal.h">
+			<Option target="PruebasProyecto"/>
+		</Unit>
+		<Unit filename="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets-none.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/axel/Escritorio/proyect_repo/BattleSpace2.0/../../../../../usr/lib/x86_64-linux-gnu/cmake/SFML/SFMLSharedTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SFML\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

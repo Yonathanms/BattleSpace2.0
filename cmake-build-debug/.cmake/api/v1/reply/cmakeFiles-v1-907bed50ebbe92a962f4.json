@@ -49,6 +49,21 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
+			"path" : "/snap/clion/234/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeFindCodeBlocks.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/234/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/234/bin/cmake/linux/x64/share/cmake-3.25/Modules/ProcessorCount.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
 			"path" : "/snap/clion/234/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake"
 		},
 		{
@@ -145,8 +160,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/yonathanms/Escritorio/PrueabasGitProyec/BattleSpace2.0/cmake-build-debug",
-		"source" : "/home/yonathanms/Escritorio/PrueabasGitProyec/BattleSpace2.0"
+		"build" : "/home/axel/Escritorio/proyect_repo/BattleSpace2.0/cmake-build-debug",
+		"source" : "/home/axel/Escritorio/proyect_repo/BattleSpace2.0"
 	},
 	"version" : 
 	{

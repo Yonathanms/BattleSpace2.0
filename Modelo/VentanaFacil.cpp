@@ -38,8 +38,10 @@ Ventana_Facil::Ventana_Facil(Vector2f resolucion) {
     num_enemy = 6;
     enemys[num_enemy] = Enemigos();
 
-
-
+    arduino.Open("/dev/ttyACM0"); // Reemplazar por el puerto correspondiente
+    arduino.SetBaudRate(LibSerial::BaudRate::BAUD_9600);
+    arduino.SetStopBits(LibSerial::StopBits::STOP_BITS_1);
+    arduino.SetCharacterSize(LibSerial::CharacterSize::CHAR_SIZE_8);
     ciclo();
 }
 
@@ -48,6 +50,24 @@ Ventana_Facil::Ventana_Facil(Vector2f resolucion) {
  *
  * Este método permite que el programa esté constantemente escuchando las ordernes del usuario
  */
+
+void Ventana_Facil::LeerArduino() {
+
+    while (true) {
+        getline(arduino, input);
+        std::cout << "valor: " << input << std::endl;
+        if (input != "") {
+            std::cout << "moviendo hacia arriba: " << input << std::endl;
+            MoveS(1);
+            std::this_thread::sleep_for(std::chrono::milliseconds(500));
+        } else if (input == "") {
+            std::cout << "moviendo hacia abajo: " << input << std::endl;
+            MoveS(0);
+            std::this_thread::sleep_for(std::chrono::milliseconds(500));
+        }
+    }
+}
+
 
 void Ventana_Facil::eventos() {
     while (VentanaFacil->pollEvent(*evento)) {
@@ -95,10 +115,13 @@ void Ventana_Facil::renderizar() {
  * Esta función es un ciclo constante, es decir , actualiza lo que va sucediendo en la interfaz gráfica.
  */
 void Ventana_Facil::ciclo(){
+    std::function<void()> funcionLeerArduino = std::bind(&Ventana_Facil::LeerArduino, this);
+    std::thread hiloArduino(funcionLeerArduino);
     while (VentanaFacil->isOpen()){
         eventos();
         renderizar();
     }
+    hiloArduino.join();
 }
 
 /***
