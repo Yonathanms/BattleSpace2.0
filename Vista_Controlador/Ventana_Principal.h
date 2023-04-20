@@ -27,6 +27,7 @@ private:
     Event *evento;
     RenderWindow  *VentanaMenu; ////representa la ventana principal, pero a pesar de eso es un atributo, no es un objeto como tal
 
+
 };
 
 #endif PRUEBASPROYECTO_VENTANA_PRINCIPAL_H

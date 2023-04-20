@@ -4,52 +4,59 @@
 
 #include "../Vista_Controlador/Bullet.h"
 #include "iostream"
-
+/***
+ * @author Yonathan Monge
+ * @brief Constructor de la clase "Bullet"
+ *
+ * se instancian las texturas y hitbox a las balas con punteros, ademas
+ * se les da tamaño y posición
+ */
 Bullet::Bullet() {
-    txtr_bullet = new Texture;
-    spr_bullet = new Sprite;
 
-    txtr_bullet->loadFromFile("../Recursos/Bullet.png");
+    //instancia
+    texture_bullet = new Texture;
+    sprite_bullet = new Sprite;
 
-    spr_bullet->setTexture(*txtr_bullet);
-    spr_bullet->setScale(1.f/14,1.f/10);
-    spr_bullet->setPosition(170,2000);
-}
-///obtiene el sprite de la bala
-Sprite Bullet::GetSprBullet() {
-    return *spr_bullet;
-}
-///obtiene la cantidad de balas que hayamos otorgado en las clases ventanas
-int Bullet::SetNumBullet(int c_balas) {
-    std::cout<<"cantidad de balas totales por 'cartucho' = "<<c_balas<<std::endl;
-    num_bullet=c_balas;
-    total_num_bullet=c_balas;
-    return c_balas;
-}
+    //scala, posicion y textura
+    texture_bullet->loadFromFile("../Recursos/Bullet.png");
+    sprite_bullet->setScale(1.f/14,1.f/10);
+    sprite_bullet->setTexture(*texture_bullet);
+    sprite_bullet->setPosition(170,2000);
 
-///Es el metodo bullet collector, este metodo debe reutilizar la memoria y disminuir el daño de las balas
-void Bullet::BulletCollector() {
-    std::cout<<"numero de identificador de la bala= "<<num_bullet<<std::endl;         ///tengo que mostrar las balas primero para poder hacer esto xd************************
+}
+/***
+ * @brief es un get, que retorna la textura de la bala
+ * @return Retorna un Sprite.
+ */
+Sprite Bullet::getSprtBullet() {
+    return *sprite_bullet;
 }
 
-///es un metodo que permite spawnear la bala en la posicion y enemiga y luego se mueve en x
-void Bullet::MoveBullet_X(int Posicion_Spawn) {
+/***
+ * @brief Este método indica la posición en el eje x de la bala
+ *
+ * @return Retorna un entero, representa la posición en el eje x de
+ * la bala
+ */
+int Bullet::GetPosXbullet() {
+    return sprite_bullet->getPosition().x;
+}
 
-    if (num_bullet>0){
-        num_bullet--;
+/***
+ * @brief Movimiento de las balas.
+ *
+ * Esta función permite mover la bala en la interfaz gráfica.
+ *
+ * @param PosicionS es de tipo enterp y es la posición actual de la nave del jugador em el eje "y"
+ * en esta posición aparecen las balas
+ */
+void Bullet::Movebullet(int PosicionS) {
+    if(sprite_bullet->getPosition().x == 170){
+        sprite_bullet->setPosition(sprite_bullet->getPosition().x+5, PosicionS);
     }
-    if (num_bullet<=0){
-        num_bullet = total_num_bullet;
-        std::cout<<"municion descargada"<<std::endl;
+    else{
+        sprite_bullet->move(12.0f, 0);
     }
-    if (spr_bullet->getPosition().x==170){
-        spr_bullet->setPosition(spr_bullet->getPosition().x+5,Posicion_Spawn);
-
-    }
-    if (spr_bullet->getPosition().x!=170){
-        spr_bullet->setPosition(spr_bullet->getPosition().x+5,spr_bullet->getPosition().y);
-    }
-    std::cout<<"balas restantes= "<<num_bullet<<::std::endl;
 }
 
 

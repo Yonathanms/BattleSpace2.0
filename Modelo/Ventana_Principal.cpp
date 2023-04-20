@@ -49,7 +49,7 @@ void ventana_Principal::eventos() {
                     posicionmouse.y <= btnFacil->getPosition().y + btnFacil->getSize().y) {
                     std::cout << "hola ventana nueva de modo facil xd" << std::endl;
                     VentanaMenu->close();
-                    Ventana_Facil();
+                    Ventana_Facil({1350,850});
 
                 }
 

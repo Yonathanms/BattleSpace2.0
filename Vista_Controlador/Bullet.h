@@ -4,30 +4,26 @@
 
 #pragma once
 
-#include "../Vista_Controlador/Ship.h"
+#ifndef PRUEBASPROYECTO_BULLET_H
+
 #include "SFML/Graphics.hpp"
 
+#define PRUEBASPROYECTO_BULLET_H
+using namespace std;
 using namespace sf;
 
-#ifndef PRUEBASPROYECTO_BULLET_H
-#define PRUEBASPROYECTO_BULLET_H
 
-
-class Bullet{
+class Bullet {
 public:
     Bullet();
-    int SetNumBullet(int c_balas);
-    Sprite GetSprBullet();
-    void MoveBullet_X(int Posicion_Spawn);
-    void BulletCollector();
-    void Damage_B();
+    Sprite getSprtBullet();
+    int GetPosXbullet();
+    void Movebullet(int PosicionS);
 
 private:
-    Texture *txtr_bullet;
-    Sprite *spr_bullet;
-    int num_bullet;
-    int total_num_bullet;
-    int *id_bullet;
+    Texture *texture_bullet;
+    Sprite *sprite_bullet;
+
 };
 
 
