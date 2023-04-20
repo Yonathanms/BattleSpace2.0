@@ -24,9 +24,21 @@ Ventana_Facil::Ventana_Facil(Vector2f resolucion) {
 
     Reloj_Ventana = new Clock;
     TiempoTranscurrido = new Time;
+    Reloj_Ventana2 = new Clock;
+    TiempoTranscurrido2= new Time;
 
     num_bala = 200;
     balas[num_bala] = Bullet();
+
+    num_random1 = rand()% 6+0;
+    num_random2 = rand()% 6+0;
+    num_random3 = rand()% 6+0;
+
+    num_enemyAUX = 6;
+    num_enemy = 6;
+    enemys[num_enemy] = Enemigos();
+
+
 
     ciclo();
 }
@@ -70,6 +82,8 @@ void Ventana_Facil::renderizar() {
 
     // metodo que dibuja las balas
     RenderBullets();
+    //Metodo que dibuja las naves
+    RenderEnemys();
 
 
     VentanaFacil->display();
@@ -121,7 +135,7 @@ void Ventana_Facil::RenderBullets() {
 
         }
         else{
-            //cout<<"municion descargada"<<endl;
+            cout<<"municion descargada"<<endl;
         }
     }
     else{
@@ -142,6 +156,52 @@ void Ventana_Facil::RenderBullets() {
 int Ventana_Facil::Reduccion_Bullets(int num_actual) {
     return num_actual-4;
 }
+
+void Ventana_Facil::RenderEnemys() {
+    *TiempoTranscurrido2 = Reloj_Ventana2->getElapsedTime();
+
+    //cout<<"Bala detectada en campo de vision "<<num_bala-1<<" Posicion actual x = "<<balas[num_bala-1].GetPosXbullet()<<endl;
+    // cout<<TiempoTranscurrido->asSeconds()<<endl;
+
+    if (TiempoTranscurrido2->asSeconds()<=10){
+
+        if (num_enemy>0){
+            if (TiempoTranscurrido2->asSeconds()<10) {
+                VentanaFacil->draw(enemys[num_enemy-1].GetSpriteEnemy(1));
+                enemys[num_enemy-1].MoveEnemy(num_random1,1.01);
+            }
+            if (TiempoTranscurrido2->asSeconds()>1 and TiempoTranscurrido2->asSeconds()<10){
+                VentanaFacil->draw(enemys[num_enemy-2].GetSpriteEnemy(1));
+                enemys[num_enemy-2].MoveEnemy(num_random2,1.01);
+            }
+            if (TiempoTranscurrido2->asSeconds()>2 and TiempoTranscurrido2->asSeconds()<10){
+                VentanaFacil->draw(enemys[num_enemy-3].GetSpriteEnemy(1));
+                enemys[num_enemy-3].MoveEnemy(num_random3,1.01);
+
+                cout<<num_enemy<<endl;
+            }
+
+        }
+        if (num_enemy==0)
+        {
+            num_enemy=num_enemyAUX;
+            cout<<"fase superada"<<endl;
+        }
+    }
+    else{
+        num_enemy = Reduccion_Enemys(num_enemy);
+        cout<<num_enemy<<endl;
+        Reloj_Ventana2->restart();
+    }
+}
+
+int Ventana_Facil::Reduccion_Enemys(int num_actual) {
+    return num_actual-3;
+}
+
+
+
+
 
 
 

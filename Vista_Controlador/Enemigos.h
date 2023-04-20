@@ -19,7 +19,8 @@ class Enemigos {
 public:
     Enemigos();
     Sprite GetSpriteEnemy(int gmode);
-    void MoveEnemy();
+    int GetPosXEnemy();
+    void MoveEnemy(int Move, float GameM);
 
 private:
 
@@ -27,6 +28,9 @@ private:
     Texture *text_enemy1;
     Texture *text_enemy2;
     Texture *text_enemy3;
+
+    Time *TiempotranscurridoE;
+    Clock *RelojE;
 
 };
 

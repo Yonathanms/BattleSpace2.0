@@ -12,7 +12,6 @@
 #include "SFML/Graphics.hpp"
 #include "Ship.h"
 #include "../Vista_Controlador/Bullet.h"
-#include "../Vista_Controlador/Bullet.h"
 #include "../Vista_Controlador/Enemigos.h"
 
 #define PRUEBASPROYECTO_VENTANAFACIL_H
@@ -29,6 +28,10 @@ public:
     void eventos();
     void RenderBullets();
     int Reduccion_Bullets(int num_actual);
+    int Reduccion_Enemys(int num_actual);
+    
+
+    void RenderEnemys();
 
 
 
@@ -41,10 +44,21 @@ private:
 
     Clock *Reloj_Ventana;
     Time *TiempoTranscurrido;
+    Clock *Reloj_Ventana2;
+    Time *TiempoTranscurrido2;
 
     int  num_bala;
-
     Bullet balas[200];   //Cantidad máxima de munición
+
+    int num_random1;
+    int num_random2;
+    int num_random3;
+
+    int num_enemyAUX;
+    int num_enemy;
+    Enemigos enemys[6]; //Cantidad de enemigos por oleada
+
+
 
 };
 
