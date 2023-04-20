@@ -5,6 +5,8 @@
 #ifndef PRUEBASPROYECTO_ENEMIGOS_H
 
 #include "SFML/Graphics.hpp"
+#include "stdlib.h"
+#include "iostream"
 
 #define PRUEBASPROYECTO_ENEMIGOS_H
 
@@ -16,12 +18,15 @@ class Enemigos {
 
 public:
     Enemigos();
-
+    Sprite GetSpriteEnemy(int gmode);
+    void MoveEnemy();
 
 private:
 
     Sprite *sprt_enemy;
-    Texture *text_enemy;
+    Texture *text_enemy1;
+    Texture *text_enemy2;
+    Texture *text_enemy3;
 
 };
 

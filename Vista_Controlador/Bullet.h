@@ -17,7 +17,6 @@ class Bullet {
 public:
     Bullet();
     Sprite getSprtBullet();
-    int GetPosXbullet();
     void Movebullet(int PosicionS);
 
 private:

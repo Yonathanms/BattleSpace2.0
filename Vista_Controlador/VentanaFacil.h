@@ -13,13 +13,14 @@
 #include "Ship.h"
 #include "../Vista_Controlador/Bullet.h"
 #include "../Vista_Controlador/Bullet.h"
+#include "../Vista_Controlador/Enemigos.h"
 
 #define PRUEBASPROYECTO_VENTANAFACIL_H
 
 using namespace sf;
 using namespace std;
 
-class Ventana_Facil: public Ship, public Bullet{
+class Ventana_Facil: public Ship, public Bullet, public Enemigos{
 public:
     ///metodos
     Ventana_Facil(Vector2f resolucion);

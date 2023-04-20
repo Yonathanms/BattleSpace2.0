@@ -66,9 +66,11 @@ void Ventana_Facil::eventos() {
 void Ventana_Facil::renderizar() {
     VentanaFacil->clear();
     VentanaFacil->draw(GetSprShip());  //obtiene el sprite de la nave  del "ship.h" por medio de herencia
+    VentanaFacil->draw(GetSpriteEnemy(1));
 
     // metodo que dibuja las balas
     RenderBullets();
+
 
     VentanaFacil->display();
 }
@@ -94,8 +96,8 @@ void Ventana_Facil::ciclo(){
 void Ventana_Facil::RenderBullets() {
     *TiempoTranscurrido = Reloj_Ventana->getElapsedTime();
 
-    cout<<"Bala detectada en campo de vision "<<num_bala-1<<" Posicion actual x = "<<balas[num_bala-1].GetPosXbullet()<<endl;
-    cout<<TiempoTranscurrido->asSeconds()<<endl;
+    //cout<<"Bala detectada en campo de vision "<<num_bala-1<<" Posicion actual x = "<<balas[num_bala-1].GetPosXbullet()<<endl;
+   // cout<<TiempoTranscurrido->asSeconds()<<endl;
 
     if (TiempoTranscurrido->asSeconds()<5){
 
@@ -119,12 +121,12 @@ void Ventana_Facil::RenderBullets() {
 
         }
         else{
-            cout<<"municion descargada"<<endl;
+            //cout<<"municion descargada"<<endl;
         }
     }
     else{
         num_bala = Reduccion_Bullets(num_bala);
-        cout<<num_bala<<endl;
+        //cout<<num_bala<<endl;
         Reloj_Ventana->restart();
     }
 }

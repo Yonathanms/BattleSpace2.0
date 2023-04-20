@@ -32,15 +32,6 @@ Sprite Bullet::getSprtBullet() {
     return *sprite_bullet;
 }
 
-/***
- * @brief Este método indica la posición en el eje x de la bala
- *
- * @return Retorna un entero, representa la posición en el eje x de
- * la bala
- */
-int Bullet::GetPosXbullet() {
-    return sprite_bullet->getPosition().x;
-}
 
 /***
  * @brief Movimiento de las balas.
